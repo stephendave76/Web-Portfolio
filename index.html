@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephen Dave Hugo — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">STEPHEN<span class="logo-accent">DAVE</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">HOME</a>
+      <a href="#about">ABOUT</a>
+      <div class="has-dropdown">
+        <a href="#skills" class="drop-toggle" aria-haspopup="true" aria-expanded="false">SKILLS <i class="fa-solid fa-caret-down"></i></a>
+        <div class="dropdown">
+          <a href="#skill-core">Core Skills</a>
+          <a href="#skill-lang">Languages</a>
+          <a href="#skill-frameworks">Frameworks &amp; Libraries</a>
+          <a href="#skill-tools">Tools</a>
+        </div>
+      </div>
+      <div class="has-dropdown">
+        <a href="#work" class="drop-toggle" aria-haspopup="true" aria-expanded="false">MY WORK <i class="fa-solid fa-caret-down"></i></a>
+        <div class="dropdown">
+          <button type="button" data-project="study-break"><span class="drop-index">01</span> Study Break</button>
+          <button type="button" data-project="regex-challenge"><span class="drop-index">02</span> Regex Challenge 2</button>
+          <button type="button" data-project="workout-planner"><span class="drop-index">03</span> Workout Planner</button>
+        </div>
+      </div>
+      <a href="#contact">CONTACT</a>
+    </div>
+    <div class="nav-socials">
+      <a href="https://www.facebook.com/share/1MaDMBLcoq/" target="_blank">FB</a>
+      <a href="https://www.instagram.com/www_deeeevxs?igsh=MTd6eWdneDhkMDZ0Nw==" target="_blank">IG</a>
+      <a href="https://github.com/stephendave76" target="_blank">GH</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <span class="corner corner-tl"></span>
+    <span class="corner corner-tr"></span>
+    <span class="corner corner-bl"></span>
+    <span class="corner corner-br"></span>
+    <span class="hero-plus plus-1">+</span>
+    <span class="hero-plus plus-2">+</span>
+
+    <div class="hero-content reveal">
+      <div class="hero-photo-col">
+        <div class="hero-photo"><img src="dev.jpg.jpg" alt="Stephen Dave A. Hugo"><span class="hero-photo-tag"><span>●</span> DEV</span></div>
+      </div>
+
+      <div class="hero-text-col">
+        <div class="hero-greet">&gt; Aspiring Software Developer<span class="hero-cursor"></span></div>
+        <h1 class="hero-heading">Welcome to my <span class="accent">Portfolio</span></h1>
+        <div class="hero-badge"><span class="dot"></span> Available for work</div>
+        <div class="hero-name">Stephen Dave A. Hugo</div>
+        <div class="hero-tagline">I CODE. I DESIGN. I DELIVER.</div>
+        <div class="hero-dots"><span></span><span></span><span></span><span></span></div>
+        <a href="https://github.com/stephendave76" target="_blank" class="hero-github-cta"><i class="fa-brands fa-github"></i> View GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll reveal">
+      <span class="scroll-line"></span>
+      SCROLL
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner reveal">
+      <div class="eyebrow">who i am</div>
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm <strong>Stephen Dave A. Hugo</strong>, an aspiring software developer who enjoys turning ideas into clean, functional interfaces. I like picking apart how things work and rebuilding them better — whether that's a layout, a workflow, or a line of code.</p>
+          <p>Outside of the screen, I stay active and keep a clear head through <strong>basketball</strong> and the <strong>gym</strong> — habits that carry over into how I work: consistent reps, steady improvement, and showing up every day.</p>
+        </div>
+        <div class="hobby-list reveal-stagger">
+          <div class="hobby-card reveal-item">
+            <div class="hobby-icon"><i class="fa-solid fa-basketball"></i></div>
+            <div class="hobby-info">
+              <div class="hobby-title">Basketball</div>
+              <div class="hobby-desc">court time, teamwork, competition</div>
+            </div>
+          </div>
+          <div class="hobby-card reveal-item">
+            <div class="hobby-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="hobby-info">
+              <div class="hobby-title">Gym</div>
+              <div class="hobby-desc">discipline, consistency, progress</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner reveal">
+      <div class="eyebrow">capabilities</div>
+      <h2 class="section-title">Skills &amp; tools</h2>
+      <div class="skill-groups reveal-stagger">
+        <div class="reveal-item" id="skill-core">
+          <span class="skill-group-label">CORE SKILLS</span>
+          <div class="chip-row">
+            <span class="chip">Web Development</span>
+            <span class="chip">HTML&CSS</span>
+            <span class="chip">UI/UX Design</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Front-end Development</span>
+            <span class="chip">Database Management</span>
+            <span class="chip">Debugging</span>
+          </div>
+        </div>
+        <div class="reveal-item" id="skill-lang">
+          <span class="skill-group-label">LANGUAGES</span>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+        </div>
+        <div class="reveal-item" id="skill-frameworks">
+          <span class="skill-group-label">FRAMEWORKS &amp; LIBRARIES <em>· currently exploring</em></span>
+          <div class="chip-row">
+            <span class="chip">React</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Laravel </span>
+          </div>
+        </div>
+        <div class="reveal-item" id="skill-tools">
+          <span class="skill-group-label">TOOLS</span>
+          <div class="chip-row">
+            <span class="chip">Visual Studio Code</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="section-inner reveal">
+      <div class="eyebrow">selected work</div>
+      <h2 class="section-title">My work</h2>
+      <div class="bento reveal-stagger">
+        <div class="bento-card reveal-item">
+          <div class="bento-glow"></div>
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+            <div class="card-index">01</div>
+            <div class="card-title">Study Break</div>
+            <p class="card-desc">Study Break Game is a collection of short and engaging mini-games designed to help students relax and refresh their minds during study breaks. It includes memory, reaction time, math, word, and pattern recognition challenges that improve focus, thinking skills, and mental alertness while keeping gameplay simple and enjoyable.</p>
+            <div class="card-tags"><span>Web Development</span><span>Interactive</span></div>
+          </div>
+          <div class="card-actions">
+            <a href="https://stephendave76.github.io/Study-Game/" target="_blank" class="card-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <button class="card-details" data-project="study-break">Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="bento-card reveal-item">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+            <div class="card-index">02</div>
+            <div class="card-title">Regex Challenge 2</div>
+            <p class="card-desc">An interactive learning platform designed to help students learn and practice Regular Expressions through hands-on challenges. It allows users to create regex patterns, test them against given inputs, and receive instant feedback to improve their understanding and problem-solving skills.</p>
+            <div class="card-tags"><span>Web Development</span><span>UI/UX</span></div>
+          </div>
+          <div class="card-actions">
+            <a href="https://okayt.github.io/RegEx-Escape.io/" target="_blank" class="card-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <button class="card-details" data-project="regex-challenge">Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="bento-card reveal-item">
+          <div>
+            <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="card-index">03</div>
+            <div class="card-title">Workout Planner</div>
+            <p class="card-desc">A workout planner where users log training days and exercises, track streaks and weekly activity, and generate full routines instantly with a built-in AI workout generator.</p>
+            <div class="card-tags"><span>Web Development</span><span>UI/UX</span></div>
+          </div>
+          <div class="card-actions">
+            <a href="https://stephendave76.github.io/Workout-Planner/" target="_blank" class="card-link">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <button class="card-details" data-project="workout-planner">Details <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-wrap reveal">
+        <div class="eyebrow">get in touch</div>
+        <h2 class="contact-big">Let's build something.<br>
+          <a href="mailto:izumimiyamura588@gmail.com">izumimiyamura588@gmail.com</a>
+        </h2>
+        <a href="mailto:izumimiyamura588@gmail.com" class="contact-cta">Say hello <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="contact-socials">
+          <a href="https://www.facebook.com/share/1MaDMBLcoq/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/www_deeeevxs?igsh=MTd6eWdneDhkMDZ0Nw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="https://github.com/stephendave76" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+          <textarea name="message" placeholder="What's on your mind?" rows="4" required></textarea>
+          <button type="submit" class="contact-cta form-submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="content-footer">
+    <span>&copy; Stephen Dave <span id="year">2026</span></span>
+    <span>Built with HTML / CSS / JS</span>
+  </footer>
+</main>
+
+<div class="modal-backdrop" id="projectModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+    <div class="card-icon" id="modalIcon"></div>
+    <div class="card-index" id="modalIndex"></div>
+    <h3 class="card-title modal-title" id="modalTitle"></h3>
+    <p class="card-desc" id="modalDesc"></p>
+    <div class="modal-features">
+      <h4 class="modal-subtitle">Highlights</h4>
+      <ul id="modalFeatures"></ul>
+    </div>
+    <div class="card-tags" id="modalTags"></div>
+    <div class="modal-actions">
+      <a href="#" target="_blank" class="contact-cta modal-live" id="modalLive">View live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#" target="_blank" class="card-link" id="modalSource">Source code <i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
