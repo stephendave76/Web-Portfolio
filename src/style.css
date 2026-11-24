@@ -253,7 +253,7 @@ h2.section-title{font-size:clamp(1.4rem,2.4vw,1.8rem);font-weight:600;margin-bot
 }
 @media(max-width:640px){.skill-groups{grid-template-columns:1fr;}}
 
-/* WORK — equal grid */
+/* WORK - equal grid */
 .bento{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -457,7 +457,7 @@ footer.content-footer{
   display:flex;gap:10px;
   color:var(--ink-soft);font-size:0.88rem;
 }
-.modal-features li::before{content:'▸';color:var(--accent);flex-shrink:0;}
+.modal-features li::before{content:'\25B8';color:var(--accent);flex-shrink:0;}
 .modal-actions{
   display:flex;align-items:center;gap:20px;flex-wrap:wrap;
   margin-top:22px;
